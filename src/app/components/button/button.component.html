@@ -1,0 +1,15 @@
+<!-- <p>button works!</p> -->
+
+<!-- <button class="btn">Click here</button> -->
+
+<!-- 
+    text: string interpolation {{ }}
+    color: inline styling, directive [ngStyle] 
+    event: (click)="onClick()" set method to onClick()
+-->
+<button 
+    [ngStyle]="{'background-color': color}" 
+    class="btn" 
+    (click)="onClick()" > 
+    {{ text }} 
+</button>

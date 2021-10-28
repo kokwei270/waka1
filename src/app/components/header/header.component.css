@@ -1,0 +1,7 @@
+/* style the header tag */
+header {
+    display: flex; /* send the button to the side */
+    justify-content: space-between; /* fill space till button */
+    align-items: center;
+    margin-bottom: 20px;
+}

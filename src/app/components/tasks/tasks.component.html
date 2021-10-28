@@ -1,0 +1,19 @@
+<!-- <p>tasks works!</p> -->
+
+<!-- 
+    Directive ngFor to iterate 
+    - index is task
+    - array is tasks, property of this component
+    <p *ngFor="let task of tasks">{{task.text}}</p>
+-->
+
+<!-- 
+    Replace paragraph with item
+    - [task] is input
+<app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
+-->
+<app-task-item 
+    *ngFor="let task of tasks" 
+    [task]="task"
+    (onDeteleTask) = "deleteTask( task )"
+></app-task-item>

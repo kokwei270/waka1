@@ -1,0 +1,17 @@
+<!-- <p>task-item works!</p> -->
+
+<div class="task">
+    <h3>
+        {{ task.text }} 
+        <!--
+            event: click -> onDelete( task ) // task is passed as param to method
+            bold, add icon, change color of icon 
+        -->
+        <fa-icon 
+            (click)="onDelete(task)"
+            [ngStyle] = "{ color: 'red' }"
+            [icon]="faTimes"
+        >icon</fa-icon>
+    </h3> 
+    <p>{{ task.day }}</p> <!-- non bold -->
+</div>
